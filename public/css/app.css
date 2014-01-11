@@ -1,0 +1,66 @@
+ul.nav{
+  height: 50px;
+}
+ul.horizontal-slide {
+    margin: 0;
+    padding: 0;
+    width: 380px;
+    height: 320px;
+    white-space: nowrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+ul.horizontal-slide li a:hover {
+	background-color:red; 
+	color:#FFF;
+}
+
+.shareBrowserItem {
+   background-color: white;
+   transition: background-color 500ms linear 0;
+   -moz-transition: background-color 500ms linear 0;
+   // etc
+ }
+
+ .shareSource {
+   font-style: italic;
+   font-size: 13px;
+ }
+
+ .shareBrowserItem.selected {
+   background-color: yellow;
+ }
+ 
+ul.horizontal-slide li[class*="span"] {
+    display: block;
+    float: none;
+}
+
+/*#topControls { 
+  position: fixed; 
+  top: 5px; 
+  left: 100px; 
+  border-radius:5px;
+  width: 300px;
+}*/
+#progContainer {
+  height: 20px;
+  width: 300px;
+}
+#progBar {
+  width: 0px;
+  height: 100%;
+  overflow: visible;
+  white-space: nowrap;
+}
+#personalVidList {
+  height: 350px;
+}
+
+body { padding-top: 70px; }
+
+#personalList {
+  width: 380px;
+  height: 320px;
+}

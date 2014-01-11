@@ -1,0 +1,54 @@
+<!--<header class="section header">
+  <div class="w-container" data-ng-controller="SharesController">
+    <div class="w-row">
+      <div class="w-col w-col-4 company-column">
+        <img class="logo" src="img/1376519603_teddy_bear_toy_3.png" width="41px" alt="5210abb7804e803c3f0001c7_1376519603_teddy_bear_toy_3.png">
+        <div class="company">groov.ly</div>
+      </div>
+      <nav class="w-col w-col-8 nav-column" id="loggedOut_header" data-ng-hide="global.authenticated">
+        <a class="button nav" href="signup">Sign Up</a>
+        <a class="button nav" href="signin" target="_self">Log in</a>
+      </nav>
+      <nav class="w-col w-col-8 nav-column" id="loggedIn_header" data-ng-show="global.authenticated">
+        <playercontrols></playercontrols>
+				<img id='profileImg' class='img-rounded' style='height: 40px; margin-top: 4px;', src={{'http://graph.facebook.com/'+global.user.facebook.id+'/picture'}}></img>
+        <a class="nav-link" href="/signout" target="_self">{{global.user.name}}</a>
+      </nav>
+    </div>
+  </div>
+</header>-->
+<header class="navbar navbar-inverse navbar-fixed-top navbar-default">
+	<div class="container" data-ng-controller="SharesController">
+		<div class="container">
+			<ul class="nav navbar-nav">
+        <li><img class="navbar-header" src="img/1376519603_teddy_bear_toy_3.png" width="41px" alt="5210abb7804e803c3f0001c7_1376519603_teddy_bear_toy_3.png"></li>
+				<li><div class="navbar-header"><a class="navbar-brand" href="/">groov.ly</a></div>					
+				</li>
+				<!--<li data-ng-repeat="item in menu" data-ng-show="global.user" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
+					<a href="#!/{{item.link}}">{{item.title}}</a>
+				</li>-->     
+				<playercontrols></playercontrols>
+			</ul>
+			<ul class="nav pull-right navbar-nav" data-ng-hide="global.authenticated">
+				<li><a href="signup">Signup</a>
+				</li>
+				<li class="divider-vertical"></li>
+				<li><a href="signin">Signin</a>
+				</li>
+			</ul>
+			<ul class="nav pull-right navbar-nav" data-ng-show="global.authenticated">
+				<li>
+				  <img id="profileImg" class="img-rounded" style="height: 40px; margin-top: 4px;" ,="" src="{{'http://graph.facebook.com/'+global.user.facebook.id+'/picture'}}">
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							  {{global.user.name}} <b class="caret"></b>
+						  </a>
+					<ul class="dropdown-menu">
+						<li><a href="/signout">Signout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,22 @@
+<section>
+  controller: {{name}}<br />
+  Song Id: {{params.songId}}<br />
+  current Chosen share: {{currentChosenShare.sa}}
+  <div class="row clearfix">
+    <div class="col-md-2 column">
+      <!--<span id="shareCount" ng-model="shares">this is the total count:{{shares.length}}</span>-->
+    </div>
+    <div class="col-md-6 column">
+      <span id="listenCount" ng-model="currentChosenShare">this is the listen count:{{currentChosenShare.listenCount}}</span>
+      <br>
+      <div id="currentShare">
+          <iframe id="sharePlayer" type="text/html" onload='playerLoaded();' width="480" height="270"
+                  ng-src="{{getYTURL(params.songId)}}"
+          frameborder="0" allowfullscreen></iframe>
+			</div>
+    </div>
+    <div class="col-md-4 column">
+      
+    </div>
+  </div>
+</section>

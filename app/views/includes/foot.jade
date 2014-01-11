@@ -1,0 +1,68 @@
+footer.section.footer
+    .w-container
+        .w-row
+          .w-col.w-col-6
+            img.logo-bottom(src='img/1376519603_teddy_bear_toy_3.png', width='41px', alt='5210abb7804e803c3f0001c7_1376519603_teddy_bear_toy_3.png')
+            .w-hidden-small.w-hidden-tiny.footer-text groov.ly
+          .w-col.w-col-6.right-footer-col
+            .w-hidden-small.w-hidden-tiny.footer-text Contact us:
+            a.w-inline-block.social-icon.first(href='mailto:support@webflow.com?subject=Hello')
+              img(src='img/14-social-email.png', width='30px', alt='35ec5a20-6309-494a-9d48-0e463a4d6214_14-social-email.png')
+            a.w-inline-block.social-icon(href='http://facebook.com/webflow', target='_blank')
+              img(src='img/14-social-facebook.png', width='30px', alt='8643c589-cd4b-46b1-956b-2eb95815c79c_14-social-facebook.png')
+            a.w-inline-block.social-icon(href='http://www.twitter.com/webflowapp', target='_blank')
+              img(src='img/14-social-twitter.png', width='30px', alt='a1c85180-93b5-44b0-9d23-1cfa6881fdfe_14-social-twitter.png')
+
+//Helpers
+script(type='text/javascript', src='/lib/jquery/jquery.min.js')
+script(type='text/javascript', src='lib/lodash/dist/lodash.min.js')
+
+//AngularJS
+script(type='text/javascript', src='/lib/angular/angular.js')
+script(type='text/javascript', src='/lib/angular-cookies/angular-cookies.js')
+script(type='text/javascript', src='/lib/angular-resource/angular-resource.js')
+script(type='text/javascript', src='/lib/angular-route/angular-route.min.js')
+
+//Angular UI
+script(type='text/javascript', src='/lib/angular-bootstrap/ui-bootstrap.js')
+script(type='text/javascript', src='/lib/angular-bootstrap/ui-bootstrap-tpls.js')
+script(type='text/javascript', src='/lib/angular-ui-utils/modules/route/route.js')
+
+//Application Init
+script(type='text/javascript', src='/js/app.js')
+script(type='text/javascript', src='/js/config.js')
+script(type='text/javascript', src='/js/directives.js')
+script(type='text/javascript', src='/js/filters.js')
+
+//Application Services
+script(type='text/javascript', src='/js/services/global.js')
+script(type='text/javascript', src='/js/services/articles.js')
+script(type='text/javascript', src='/js/services/shares.js')
+
+//Application Controllers
+script(type='text/javascript', src='/js/controllers/articles.js')
+script(type='text/javascript', src='/js/controllers/shares.js')
+script(type='text/javascript', src='/js/controllers/index.js')
+script(type='text/javascript', src='/js/controllers/header.js')	
+script(type='text/javascript', src='/js/controllers/songs.js')
+script(type='text/javascript', src='/js/init.js')
+
+//App Custom
+//script(type='text/javascript', src='/lib/ytInteraction.js')
+script(type='text/javascript', src='/lib/swfobject.js')
+//script(type='text/javascript', src='/lib/ytObjInteraction.js')
+
+script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js')
+script
+    WebFont.load({
+        google: {
+          families: ["Montserrat:400,700", "Varela Round:400"]
+        }
+      });
+
+script(src='https://www.youtube.com/iframe_api')
+script(type='text/javascript', src='/lib/ytObjInteraction.js')
+
+if (process.env.NODE_ENV == 'development')
+    //Livereload script rendered 
+    script(type='text/javascript', src='http://localhost:35729/livereload.js')	
